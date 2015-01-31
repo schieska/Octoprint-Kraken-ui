@@ -3,7 +3,7 @@ import setuptools
 
 ########################################################################################################################
 
-plugin_identifier = "Octohedron-ui"
+plugin_identifier = "Octohedron"
 plugin_package = "octoprint_%s" % plugin_identifier
 plugin_name = "OctoPrint-Octohedron-ui"
 plugin_version = "0.1"
