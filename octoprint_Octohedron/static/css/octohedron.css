@@ -6,6 +6,8 @@ This is a proof of concept for a more modern ui for octorpint.
 
 by Gijs van Roij
 
+
+
 -----------------------------------------------------------------------
 */
 /* Browser reset
@@ -87,20 +89,33 @@ td {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../font/fontawesome-webfont.eot?v=3.0.1');
+    src: url('../font/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'), url('../font/fontawesome-webfont.woff?v=3.0.1') format('woff'), url('../font/fontawesome-webfont.ttf?v=3.0.1') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/fonts/fontawesome-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal
+}
 /* Style
 -------------------------------------------------------------- */
 
-html {
-    margin-left: calc(100vw - 100%);
-    margin-right: 0;
+::-moz-selection {
+    color: white;
+    background: #FF3C36;
+}
+
+::selection {
+    color: white;
+    background: #FF3C36;
 }
 
 body {
     background: #EEE;
     color: #333;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: "open sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     line-height: 25px;
-    font-weight: 200;
 }
 
 h1,
@@ -126,19 +141,10 @@ a:hover {
     padding-top: 7px;
 }
 
-.navbar-fixed-top .navbar-inner,
-.navbar-static-top .navbar-inner,
-.tabbable,
-.accordion-group {
-    -webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05);
-}
-
 .open>.dropdown-menu {
     box-shadow: none;
     border: 1px solid rgba(0, 0, 0, 0);
-    background: #10a800;
+    background: #FF3C36;
 }
 
 .dropdown-menu li a,
@@ -159,7 +165,7 @@ a:hover {
 
 li .dropdown {
     border-width: 1px;
-    border-color: #10a800;
+    border-color: #FF3C36;
 }
 
 .span8 {
@@ -168,11 +174,11 @@ li .dropdown {
 }
 
 a {
-    color: #10a800;
+    color: #FF3C36;
 }
 
 i {
-    color: #10a800 !important;
+    color: #FF3C36 !important;
 }
 
 .tabbable {
@@ -187,7 +193,7 @@ i {
 
 .nav>li>a.hover,
 .nav>li>a:hover {
-    border: 1px solid #10a800;
+    border: 1px solid #FF3C36;
     background: white;
 }
 
@@ -208,7 +214,7 @@ i {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 4px;
     background: #EEE;
-    color: #10a800;
+    color: #FF3C36;
 }
 
 .accordion-group {
@@ -235,7 +241,7 @@ a {
 }
 
 a.hover {
-    color: #10a800;
+    color: #FF3C36;
 }
 
 canvas#gcode_canvas {
@@ -249,13 +255,13 @@ canvas#gcode_canvas {
 }
 
 .progress .bar {
-    background: #10a800;
+    background: #FF3C36;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 
 #navbar .navbar-inner .brand,
 #navbar .navbar-inner .nav>li>a {
-    color: #10a800;
+    color: #FF3C36;
     padding: 5px;
     margin-top: 5px;
 }
@@ -267,34 +273,40 @@ canvas#gcode_canvas {
 .nav-list>.active>a,
 .nav-list>.active>a.hover {
     background-image: none !important;
-    background: #10a800 !important;
+    background: #FF3C36 !important;
     color: white !important;
     border-radius: 4px;
+    border: 1px solid #FF3C36;
 }
 
 #navbar .navbar-inner .nav li.dropdown.open.active>.dropdown-toggle .i::before {
     color: white !important;
 }
 
+#navbar .navbar-inner .brand .caret,
+#navbar .navbar-inner .nav>li>a .caret {
+    border-bottom-color: #FF3C36 !important;
+    border-top-color: #FF3C36 !important;
+}
+
 select,
 button {
     border: 1px solid rgba(0, 0, 0, 0);
     background: #EEE;
-    color: #10a800;
+    color: #FF3C36;
 }
 /* ------ settings ------ */
 
 div#settings_dialog {
     background: #EEE;
     border: 1px solid rgba(0, 0, 0, 0);
-    box-shadow: none;
 }
 
 .modal-backdrop,
 .modal-backdrop.fade.in {
     opacity: 0.7;
     filter: alpha(opacity=70);
-    background: #10a800;
+    background: #FF3C36;
 }
 
 .modal-footer {
@@ -319,7 +331,7 @@ div#settings_dialog {
     display: block;
     height: 30px;
     margin-bottom: 10px !impoartant;
-    color: #10a800;
+    color: #FF3C36;
     margin-right: 10px !important;
 }
 
@@ -380,7 +392,7 @@ input[type="color"]:focus,
 .uneditable-input:focus,
 select:focus {
     box-shadow: none !important;
-    border: 1px solid #10a800;
+    border: 1px solid #FF3C36;
     margin: 0px;
 }
 
@@ -406,6 +418,40 @@ pre#terminal-output {
 .table td {
     border: 1px solid rgba(0, 0, 0, 0);
 }
+
+.open .dropdown-toggle i {
+    color: white !important;
+}
+/* ------ checkbox ------ */
+
+.form-inline .checkbox {
+    margin-left: 23px;
+}
+
+input[type="checkbox"] {
+    margin-top: 2px;
+    height: 0px;
+}
+
+input[type="checkbox"]::before {
+    content: "\f0c8";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #EEE;
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "\f14a";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #333;
+    border-radius: 2px;
+}
 /* ------ buttons ------ */
 
 .navbar .btn,
@@ -423,7 +469,7 @@ pre#terminal-output {
     background-image: none;
     box-shadow: none;
     background: #EEE;
-    color: #10a800;
+    color: #FF3C36;
     border: 1px solid rgba(0, 0, 0, 0);
     height: 30px;
     text-shadow: none;
@@ -432,7 +478,7 @@ pre#terminal-output {
 .btn.hover i,
 .btn:hover i,
 .btn[hover] i {
-    color: #10a800;
+    color: #FF3C36;
 }
 
 .btn.hover,
@@ -442,7 +488,7 @@ pre#terminal-output {
     box-shadow: none;
     background: white;
     border: 1px solid #EEE;
-    color: #10a800;
+    color: #FF3C36;
 }
 
 .btn-primary.hover,
@@ -458,7 +504,7 @@ pre#terminal-output {
     background-image: none;
     box-shadow: none;
     background: #EEE;
-    color: #10a800;
+    color: #FF3C36;
     border: 1px solid rgba(0, 0, 0, 0);
     height: 30px;
 }
@@ -466,7 +512,7 @@ pre#terminal-output {
 .btn-primary {
     background-image: none;
     box-shadow: none;
-    background: #10a800;
+    background: #FF3C36;
     border: 1px solid rgba(0, 0, 0, 0);
     color: white;
 }
@@ -477,14 +523,14 @@ pre#terminal-output {
     background-image: none;
     box-shadow: none;
     background: white;
-    border: 1px solid #10a800;
-    color: #10a800;
+    border: 1px solid #FF3C36;
+    color: #FF3C36;
 }
 
 .btn-primary.hover i,
 .btn-primary:hover i,
 .btn-primary[hover] i {
-    color: #10a800 !important;
+    color: #FF3C36 !important;
 }
 
 .btn-primary [class^="icon-"] {
@@ -492,7 +538,7 @@ pre#terminal-output {
 }
 
 .btn-primary.hover [class^="icon-"] {
-    color: #10a800 !important;
+    color: #FF3C36 !important;
 }
 
 .btn-primary:disabled,
@@ -523,7 +569,7 @@ button#login_button {
 
 button#login_button:hover {
     background: #eee;
-    color: #10a800;
+    color: #FF3C36;
     border: none;
 }
 
@@ -535,6 +581,10 @@ button.btn.dropdown-toggle {
     box-shadow: none !important;
 }
 /* ------ login dropdown ------ */
+
+.dropdown-menu {
+    border-radius: 4px;
+}
 
 .dropdown-menu input[type="text"],
 .dropdown-menu input[type="password"] {
@@ -556,7 +606,7 @@ button #login_button {
     box-shadow: none;
     background: white;
     border: 1px solid #EEE;
-    color: #10a800;
+    color: #FF3C36;
 }
 
 button #login_button {
@@ -564,14 +614,30 @@ button #login_button {
     background-image: none;
     box-shadow: none;
     background: #EEE;
-    color: #10a800;
+    color: #FF3C36;
     border: 1px solid rgba(0, 0, 0, 0);
     height: 30px;
+}
+
+.btn-large {
+    padding: 11px 19px;
+    font-size: 17.5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    height: 45px;
+}
+
+.btn-large:hover {
+    padding: 11px 19px;
+    font-size: 17.5px;
+    background: none !important;
+    height: 45px;
 }
 /* ------ rest ------ */
 
 .slider-track .slider-selection {
-    background: none #10a800;
+    background: none #FF3C36;
     border: none;
 }
 
@@ -609,7 +675,7 @@ i.icon-ok {
 
 .octoprint-container .accordion-heading [class^="icon-"],
 .octoprint-container .accordion-heading [class*=" icon-"] {
-    color: #10a800;
+    color: #FF3C36;
 }
 
 .accordion-heading .accordion-heading-button a {
@@ -637,14 +703,9 @@ i.icon-ok {
     box-shadow: none;
 }
 
-.modal,
-#files .popover {
-    box-shadow: none;
-    border: none;
-}
-
 .modal {
     background: #EEE;
+    border: none;
 }
 
 #gcode_files tbody tr {
@@ -670,3 +731,17 @@ td:last-child,
 th:last-child {
     border-radius: 0px 4px 4px 0px;
 }
+
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner,
+.tabbable,
+.accordion-group,
+.modal,
+#files .popover {
+    -webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05);
+}
+/* ------ phone css ------ */
+
+@media (min-device-width: 640px) {}
