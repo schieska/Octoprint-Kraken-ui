@@ -90,9 +90,14 @@ td {
 /* Style
 -------------------------------------------------------------- */
 
+html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+}
+
 body {
     background: #EEE;
-    color: #38393A;
+    color: #333;
     font-family: 'Open Sans', sans-serif !important;
     line-height: 25px;
     font-weight: 200;
@@ -105,6 +110,11 @@ h4,
 h5 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+a:hover {
+    color: #333;
 }
 /* ------ navbar ------ */
 
@@ -301,6 +311,10 @@ div#settings_dialog {
 }
 /* ------ input ------ */
 
+.controls.form-inline {
+    margin-bottom: 10px;
+}
+
 #control .control-box {
     display: block;
     height: 30px;
@@ -313,10 +327,6 @@ input.input-mini,
 span.add-on {
     height: 30px;
     margin: 10px 0px;
-}
-
-.input-append .add-on {
-    border-radius: 0px 4px 4px 0px !important;
 }
 
 span.add-on {
@@ -397,6 +407,11 @@ pre#terminal-output {
     border: 1px solid rgba(0, 0, 0, 0);
 }
 /* ------ buttons ------ */
+
+.navbar .btn,
+.navbar .btn-group {
+    margin-top: 0px;
+}
 
 .btn.active,
 .btn.active {
@@ -487,9 +502,9 @@ pre#terminal-output {
 .btn.disabled,
 .btn[disabled] {
     background: #EEE;
-    color: #333;
+    color: #BABABA;
     border: 1px none;
-    opacity: 100%;
+    opacity: 1;
 }
 
 .btn-primary.disabled i,
@@ -498,7 +513,26 @@ pre#terminal-output {
 .btn.disabled i,
 .btn:disabled i,
 .btn[disabled] i {
-    color: #333 !important;
+    color: #BABABA !important;
+}
+
+button#login_button {
+    background: white;
+    color: #333;
+}
+
+button#login_button:hover {
+    background: #eee;
+    color: #10a800;
+    border: none;
+}
+
+.input-append .btn[type="submit"]:first-child {
+    border-radius: 0px;
+}
+
+button.btn.dropdown-toggle {
+    box-shadow: none !important;
 }
 /* ------ login dropdown ------ */
 
@@ -586,9 +620,53 @@ i.icon-ok {
 .footer ul li a i:before {
     color: #555;
 }
+/* ------ rest ------ */
 
 #navbar .navbar-inner .brand .caret,
 #navbar .navbar-inner .nav>li>a .caret {
     border-bottom-color: #939393;
     border-top-color: #939393;
+}
+
+.row-fluid .offset3:first-child {
+    margin-left: 25.53191489361702% !important;
+}
+
+.alert.ui-pnotify-container.alert-success.ui-pnotify-shadow,
+.alert.ui-pnotify-container.alert-error.ui-pnotify-shadow {
+    box-shadow: none;
+}
+
+.modal,
+#files .popover {
+    box-shadow: none;
+    border: none;
+}
+
+.modal {
+    background: #EEE;
+}
+
+#gcode_files tbody tr {
+    font-size: 85%;
+}
+
+form.form-horizontal {
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+td {
+    border: none !important;
+}
+
+td:first-child,
+th:first-child {
+    border-radius: 4px 0px 0px 4px;
+}
+
+td:last-child,
+th:last-child {
+    border-radius: 0px 4px 4px 0px;
 }
