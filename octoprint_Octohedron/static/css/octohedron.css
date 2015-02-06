@@ -744,9 +744,7 @@ th:last-child {
 }
 /* ------ phone css ------ */
 
-@media (min-device-width: 640px) {}
-
-@media (max-width: 640px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .navbar-inner.default {
         padding-right: 0px;
     }
