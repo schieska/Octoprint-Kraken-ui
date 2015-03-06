@@ -102,12 +102,12 @@ td {
 
 ::-moz-selection {
     color: white;
-    background: #FF3C36;
+    background: #13C100;
 }
 
 ::selection {
     color: white;
-    background: #FF3C36;
+    background: #13C100;
 }
 
 body {
@@ -144,7 +144,7 @@ a:hover {
 .open>.dropdown-menu {
     box-shadow: none;
     border: 1px solid rgba(0, 0, 0, 0);
-    background: #FF3C36;
+    background: #13C100;
 }
 
 .dropdown-menu li a,
@@ -165,7 +165,7 @@ a:hover {
 
 li .dropdown {
     border-width: 1px;
-    border-color: #FF3C36;
+    border-color: #13C100;
 }
 
 .span8 {
@@ -174,11 +174,11 @@ li .dropdown {
 }
 
 a {
-    color: #FF3C36;
+    color: #13C100;
 }
 
 i {
-    color: #FF3C36 !important;
+    color: #13C100 !important;
 }
 
 .tabbable {
@@ -193,7 +193,7 @@ i {
 
 .nav>li>a.hover,
 .nav>li>a:hover {
-    border: 1px solid #FF3C36;
+    border: 1px solid #13C100;
     background: white;
 }
 
@@ -214,7 +214,7 @@ i {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 4px;
     background: #EEE;
-    color: #FF3C36;
+    color: #13C100;
 }
 
 .accordion-group {
@@ -241,7 +241,7 @@ a {
 }
 
 a.hover {
-    color: #FF3C36;
+    color: #13C100;
 }
 
 canvas#gcode_canvas {
@@ -255,13 +255,13 @@ canvas#gcode_canvas {
 }
 
 .progress .bar {
-    background: #FF3C36;
+    background: #13C100;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 
 #navbar .navbar-inner .brand,
 #navbar .navbar-inner .nav>li>a {
-    color: #FF3C36;
+    color: #13C100;
     padding: 5px;
     margin-top: 5px;
 }
@@ -273,10 +273,10 @@ canvas#gcode_canvas {
 .nav-list>.active>a,
 .nav-list>.active>a.hover {
     background-image: none !important;
-    background: #FF3C36 !important;
+    background: #13C100 !important;
     color: white !important;
     border-radius: 4px;
-    border: 1px solid #FF3C36;
+    border: 1px solid #13C100;
 }
 
 #navbar .navbar-inner .nav li.dropdown.open.active>.dropdown-toggle .i::before {
@@ -285,15 +285,15 @@ canvas#gcode_canvas {
 
 #navbar .navbar-inner .brand .caret,
 #navbar .navbar-inner .nav>li>a .caret {
-    border-bottom-color: #FF3C36 !important;
-    border-top-color: #FF3C36 !important;
+    border-bottom-color: #13C100 !important;
+    border-top-color: #13C100 !important;
 }
 
 select,
 button {
     border: 1px solid rgba(0, 0, 0, 0);
     background: #EEE;
-    color: #FF3C36;
+    color: #13C100;
 }
 /* ------ settings ------ */
 
@@ -306,7 +306,7 @@ div#settings_dialog {
 .modal-backdrop.fade.in {
     opacity: 0.7;
     filter: alpha(opacity=70);
-    background: #FF3C36;
+    background: #13C100;
 }
 
 .modal-footer {
@@ -331,7 +331,7 @@ div#settings_dialog {
     display: block;
     height: 30px;
     margin-bottom: 10px !impoartant;
-    color: #FF3C36;
+    color: #13C100;
     margin-right: 10px !important;
 }
 
@@ -392,7 +392,7 @@ input[type="color"]:focus,
 .uneditable-input:focus,
 select:focus {
     box-shadow: none !important;
-    border: 1px solid #FF3C36;
+    border: 1px solid #13C100;
     margin: 0px;
 }
 
@@ -469,7 +469,7 @@ input[type="checkbox"]:checked::before {
     background-image: none;
     box-shadow: none;
     background: #EEE;
-    color: #FF3C36;
+    color: #13C100;
     border: 1px solid rgba(0, 0, 0, 0);
     height: 30px;
     text-shadow: none;
@@ -478,7 +478,7 @@ input[type="checkbox"]:checked::before {
 .btn.hover i,
 .btn:hover i,
 .btn[hover] i {
-    color: #FF3C36;
+    color: #13C100;
 }
 
 .btn.hover,
@@ -488,7 +488,7 @@ input[type="checkbox"]:checked::before {
     box-shadow: none;
     background: white;
     border: 1px solid #EEE;
-    color: #FF3C36;
+    color: #13C100;
 }
 
 .btn-primary.hover,
@@ -504,7 +504,7 @@ input[type="checkbox"]:checked::before {
     background-image: none;
     box-shadow: none;
     background: #EEE;
-    color: #FF3C36;
+    color: #13C100;
     border: 1px solid rgba(0, 0, 0, 0);
     height: 30px;
 }
@@ -512,7 +512,7 @@ input[type="checkbox"]:checked::before {
 .btn-primary {
     background-image: none;
     box-shadow: none;
-    background: #FF3C36;
+    background: #13C100;
     border: 1px solid rgba(0, 0, 0, 0);
     color: white;
 }
@@ -523,14 +523,14 @@ input[type="checkbox"]:checked::before {
     background-image: none;
     box-shadow: none;
     background: white;
-    border: 1px solid #FF3C36;
-    color: #FF3C36;
+    border: 1px solid #13C100;
+    color: #13C100;
 }
 
 .btn-primary.hover i,
 .btn-primary:hover i,
 .btn-primary[hover] i {
-    color: #FF3C36 !important;
+    color: #13C100 !important;
 }
 
 .btn-primary [class^="icon-"] {
@@ -538,7 +538,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .btn-primary.hover [class^="icon-"] {
-    color: #FF3C36 !important;
+    color: #13C100 !important;
 }
 
 .btn-primary:disabled,
@@ -569,7 +569,7 @@ button#login_button {
 
 button#login_button:hover {
     background: #eee;
-    color: #FF3C36;
+    color: #13C100;
     border: none;
 }
 
@@ -606,7 +606,7 @@ button #login_button {
     box-shadow: none;
     background: white;
     border: 1px solid #EEE;
-    color: #FF3C36;
+    color: #13C100;
 }
 
 button #login_button {
@@ -614,7 +614,7 @@ button #login_button {
     background-image: none;
     box-shadow: none;
     background: #EEE;
-    color: #FF3C36;
+    color: #13C100;
     border: 1px solid rgba(0, 0, 0, 0);
     height: 30px;
 }
@@ -637,7 +637,7 @@ button #login_button {
 /* ------ rest ------ */
 
 .slider-track .slider-selection {
-    background: none #FF3C36;
+    background: none #13C100;
     border: none;
 }
 
@@ -675,7 +675,7 @@ i.icon-ok {
 
 .octoprint-container .accordion-heading [class^="icon-"],
 .octoprint-container .accordion-heading [class*=" icon-"] {
-    color: #FF3C36;
+    color: #13C100;
 }
 
 .accordion-heading .accordion-heading-button a {
