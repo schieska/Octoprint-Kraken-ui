@@ -3,14 +3,14 @@ import setuptools
 
 ########################################################################################################################
 
-plugin_identifier = "Octohedron"
+plugin_identifier = "Kraken"
 plugin_package = "octoprint_%s" % plugin_identifier
-plugin_name = "OctoPrint-Octohedron-ui"
+plugin_name = "OctoPrint-Kraken-ui"
 plugin_version = "0.11d"
 plugin_description = "Modern Responsive Octoprint UI"
 plugin_author = "Gijs van Roij"
 plugin_author_email = "gijs@gijsvanroij.nl"
-plugin_url = "https://github.com/schieska/Octoprint-Octohedron-ui"
+plugin_url = "https://github.com/schieska/Octoprint-Kraken-ui"
 plugin_license = "AGPLv3"
 plugin_additional_data = []
 
